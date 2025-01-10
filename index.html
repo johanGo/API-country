@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Rest countries api</title>
 </head>
+
 <body>
     <main>
         <section>
@@ -19,74 +21,42 @@
         </section>
 
         <section>
-                <div class="containerFilters">
-                    <div class="filterCountry">
-                        <ion-icon name="search-outline"></ion-icon>
-                        <input type="text" placeholder="Search for a country">
-                    </div>
-                    <select class="filterRegion" id="cars">
-                        <option value="default">Filter by Region</option>
-                        <option value="saab">Saab</option>
-                        <option value="opel">Opel</option>
-                        <option value="audi">Audi</option>
-                      </select>
+            <div class="containerFilters">
+                <div class="filterCountry">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input id="searchCountry" type="text" placeholder="Search for a country">
                 </div>
+                <select class="filterRegion" id="filterRegions">
+                    <option value="default">Filter by Region</option>
+                </select>
+            </div>
 
-                <div class="containerCountries">
-                    <div class="firstCountry same">
-                        <img class="imageCountry" src="" alt="">
-                        <div class="containerDataCountry">
-                            <span class="nameCountry">Germany</span>
-                            <div class="populationCountry">Population: <span>81.779.900</span></div>
-                            <div class="regionCountry">Region: <span>Europe</span></div>
-                            <div class="capitalCountry">Capital: <span>Berlin</span></div>
-                        </div>
+            <div id="containerCountries">
+                <!-- <div class="firstCountry same">
+                    <img class="imageCountry" src="https://flagcdn.com/w320/ax.png" alt="">
+                    <div class="containerDataCountry">
+                        <span class="nameCountry">Germany</span>
+                        <div class="populationCountry">Population: <span>81.779.900</span></div>
+                        <div class="regionCountry">Region: <span>Europe</span></div>
+                        <div class="capitalCountry">Capital: <span>Berlin</span></div>
                     </div>
-                    <!--  -->
-                    <div class="SecondCountry same">
-                        <img class="iconCountry" src="" alt="">
-                        <div>
-                            <span class="nameCountry">Germany</span>
-                            <div class="populationCountry">Population: <span>81.779.900</span></div>
-                            <div class="regionCountry">Region: <span>Europe</span></div>
-                            <div class="capitalCountry">Capital: <span>Berlin</span></div>
-                        </div>
+                </div> -->
+
+                <!-- <div class="firstCountry same">
+                    <img class="imageCountry" src="https://flagcdn.com/w320/ax.png" alt="">
+                    <div class="containerDataCountry">
+                        <span class="nameCountry">Germany</span>
+                        <div class="populationCountry">Population: <span>81.779.900</span></div>
+                        <div class="regionCountry">Region: <span>Europe</span></div>
+                        <div class="capitalCountry">Capital: <span>Berlin</span></div>
                     </div>
-                    <!--  -->
-                    <div class="thirdCountry same">
-                        <img class="iconCountry" src="" alt="">
-                        <div>
-                            <span class="nameCountry">Germany</span>
-                            <div class="populationCountry">Population: <span>81.779.900</span></div>
-                            <div class="regionCountry">Region: <span>Europe</span></div>
-                            <div class="capitalCountry">Capital: <span>Berlin</span></div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="fourthCountry same">
-                        <img class="iconCountry" src="" alt="">
-                        <div>
-                            <span class="nameCountry">Germany</span>
-                            <div class="populationCountry">Population: <span>81.779.900</span></div>
-                            <div class="regionCountry">Region: <span>Europe</span></div>
-                            <div class="capitalCountry">Capital: <span>Berlin</span></div>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="fifthCountry same">
-                        <img class="iconCountry" src="" alt="">
-                        <div>
-                            <span class="nameCountry">Germany</span>
-                            <div class="populationCountry">Population: <span>81.779.900</span></div>
-                            <div class="regionCountry">Region: <span>Europe</span></div>
-                            <div class="capitalCountry">Capital: <span>Berlin</span></div>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
+            </div>
         </section>
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
